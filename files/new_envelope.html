@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0125)ishop.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Фреймы</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<link href="bootstrap-theme.css" rel="stylesheet">
+<link href="bootstrap-theme.min.css" rel="stylesheet">
+ </head>
+ <body>
+ <div style="margin: 0px 10px;">
+ <ul class="breadcrumb">
+   <li><a href="main.html">Главная</a> </li>
+   <li><a href="ishop.html">Заказы</a> </li>
+   <li class="active">Конверт</li>
+ </ul></div>
+
+ <div class="col-xs-3">
+    Размер конверта и артикул:<br>
+    <select class="form-control">
+      <option value="Евро 110x220мм, с прямым клапаном">Евро 110x220мм, с прямым клапаном</option>
+      <option value="C6 162x144, с прямым клапаном">C6 162x144, с прямым клапаном</option>
+      <option value="15x15мм, с прямым клапаном">153x153мм, с прямым клапаном</option>
+      <option value="C5 160x230, с прямым клапаном">C5 160x230, с прямым клапаном</option>
+      <option value="C4 308x213, с прямым клапаном">C4 308x213, с прямым клапаном</option>
+      <option value="210x210, с прямым клапаном">210x210, с прямым клапаном</option>
+      <option value="250x250, с прямым клапаном">250x250, с прямым клапаном</option>
+      <option value="95x60, с треугольным клапаном">95x60, с треугольным клапаном</option>
+      <option value="112x72, с треугольным клапаном">112x72, с треугольным клапаном</option>
+      <option value="250x250, с прямым клапаном">91x59, под подарочную карту</option>
+      <option value="250x250, с прямым клапаном">60x91, кейхолдер с полукруглым вырезом</option>
+    </select><br>
+    <input class="form-control" readonly="readonly" name="surname" placeholder="Тираж шт.">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="checkbox" value="Печать с внутренней стороны конверта" name="roundCorners" >Печать с внутренней стороны конверта
+        </label>
+    </div>
+      Односторонняя ламинация 25 мкн:<br>
+      <select class="form-control">
+        <option value="Без ламинации">Без ламинации</option>
+        <option value="Глянцевая">Глянцевая</option>
+        <option value="Матовая">Матовая</option>
+        <option value="Велюровая">Велюровая</option>
+      </select><br>
+    Макет<br>
+    <select class="form-control">
+      <option value="Создать по шаблону">Создать по шаблону</option>
+      <option value="Проверить макет автоматически">Проверить макет автоматически</option>
+      <option value="Сформировать ТЗ дизайнеру">Сформировать ТЗ дизайнеру</option>
+    </select><br>
+        
+
+</div>
+
+  
+ <div class="parametersCallingCard">
+
+
+
+        <table>
+          <thead>
+            <tr>
+              <th>Тираж</th>
+              <th class="col">500</th>
+              <th class="col">1000</th>
+              <th class="col">2000</th>
+              <th class="col">3000</th>
+              <th class="col">5000</th>
+              <th class="col">10000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row">Офсетная бумага 100 г/м2</th>
+              <td>6.18</td>
+              <td>3.52</td>
+              <td>2.17</td>
+              <td>1.77</td>
+              <td>1.45</td>
+              <td>1.14</td>
+            </tr>
+      
+            <tr>
+              <th class="row">Мелованная бумага 200 г/м2</th>
+              <td>4.41</td>
+              <td>4.3</td>
+              <td>4.21</td>
+              <td>4.15</td>
+              <td>3.95</td>
+              <td>3.87</td>
+            </tr>
+      
+            <tr>
+              <th class="row">Одност. картон 230 г/м2</th>
+              
+              <td>2.8</td>
+              <td>3.94</td>
+              <td>2.53</td>
+              <td>2.03</td>
+              <td>1.69</td>
+              <td>1.36</td>
+            </tr>
+          <tbody>
+        </table>
+      
+
+</div>
+ <style>
+table {
+  overflow: hidden;
+  
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #ffa;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:after,
+th:after {
+  background-color: #ffa;
+}
+
+td:hover {
+  background-color: rgb(86, 130, 252);
+}
+
+td:focus::after,
+th:focus::after {
+  background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+td:focus::before,
+tbody th:focus::before {
+  background-color: lightblue;
+  content: '';  
+  height: 100%;
+  top: 0;
+  left: -5000px;
+  position: absolute;  
+  width: 10000px;
+  z-index: -1;
+}
+
+
+ </style>
+ <br><br><br><br>
+ <div class="col-xs-3">
+    <input class="form-control" readonly="readonly" name="surname" placeholder="Итого:"><br>
+    
+</div>
+<button class="btn btn-primary" >Продолжить</button>
+</body></html>

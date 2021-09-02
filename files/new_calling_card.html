@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0125)ishop.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Фреймы</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<link href="bootstrap-theme.css" rel="stylesheet">
+<link href="bootstrap-theme.min.css" rel="stylesheet">
+ </head>
+ <body>
+ <div style="margin: 0px 10px;">
+ <ul class="breadcrumb">
+   <li><a href="main.html">Главная</a> </li>
+   <li><a href="ishop.html">Заказы</a> </li>
+   <li class="active">Визитка Premium 50x90</li>
+ </ul></div>
+
+ <div class="col-xs-3">
+    Цветность (Количество сторон)<br>
+    <select class="form-control">
+      <option value="4+4">4+4</option>
+      <option value="4+0">4+0</option>
+    </select><br>
+    <input class="form-control" readonly="readonly" name="surname" placeholder="Тираж шт.">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="checkbox" value="" name="roundCorners" >Добавить кругление углов
+        </label>
+      </div>
+    <input class="form-control" name="surname" placeholder="Количество комплектов"><br>
+    Макет<br>
+    <select class="form-control">
+      <option value="4+4">Создать по шаблону</option>
+      <option value="4+0">Проверить макет заказчика</option>
+      <option value="4+0">Сформировать ТЗ дизайнеру</option>
+      <option value="4+0">Работа вместе с дизайнером</option>
+    </select><br>
+        
+
+</div>
+
+  
+ <div class="parametersCallingCard">
+
+
+
+        <table>
+          <thead>
+            <tr>
+              <th>Тираж</th>
+              <th class="col">100</th>
+              <th class="col">300</th>
+              <th class="col">500</th>
+              <th class="col">1000</th>
+              <th class="col">2000</th>
+              <th class="col">3000</th>
+              <th class="col">5000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row">Тачкавер белый</th>
+              <td>7.66</td>
+              <td>4.66</td>
+              <td>4</td>
+              <td>3.5</td>
+              <td>3.49</td>
+              <td>3.48</td>
+              <td>3.47</td>
+            </tr>
+      
+            <tr>
+              <th class="row">Верже белый</th>
+              <td>1.05</td>
+              <td>0.93</td>
+              <td>0.8</td>
+              <td>0.68</td>
+              <td>0.6</td>
+              <td>0.59</td>
+              <td>0.59</td>
+            </tr>
+      
+            <tr>
+              <th class="row">Лен 300 гр.</th>
+              
+              <td>3.04</td>
+              <td>2.1</td>
+              <td>1.73</td>
+              <td>1.5</td>
+              <td>1.48</td>
+              <td>1.43</td>
+              <td>1.4</td>
+            </tr>
+      
+            <tr>
+              <th class="row">Sirio Pearl ice White 300 гр.</th>
+              
+              <td>3.54</td>
+              <td>2.34</td>
+              <td>2.15</td>
+              <td>1.86</td>
+              <td>1.84</td>
+              <td>1.82</td>
+              <td>1.8</td>
+            </tr>
+          <tbody>
+        </table>
+      
+
+</div>
+ <style>
+table {
+  overflow: hidden;
+  
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #ffa;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:after,
+th:after {
+  background-color: #ffa;
+}
+
+td:hover {
+  background-color: rgb(86, 130, 252);
+}
+
+td:focus::after,
+th:focus::after {
+  background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+td:focus::before,
+tbody th:focus::before {
+  background-color: lightblue;
+  content: '';  
+  height: 100%;
+  top: 0;
+  left: -5000px;
+  position: absolute;  
+  width: 10000px;
+  z-index: -1;
+}
+
+
+ </style>
+ <br><br><br><br>
+ <div class="col-xs-3">
+    <input class="form-control" readonly="readonly" name="surname" placeholder="Итого:"><br>
+    
+</div>
+<button class="btn btn-default" >Добавить изделие</button> 
+    <button class="btn btn-primary" >Сформировать заказ</button>
+</body></html>

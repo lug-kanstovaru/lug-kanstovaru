@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0125)ishop.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Фреймы</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<link href="bootstrap-theme.css" rel="stylesheet">
+<link href="bootstrap-theme.min.css" rel="stylesheet">
+ </head>
+ <body>
+ <div style="margin: 0px 10px;">
+ <ul class="breadcrumb">
+   <li><a href="main.html">Главная</a> </li>
+   <li><a href="ishop.html">Заказы</a> </li>
+   <li class="active">Каталог на скрепку</li>
+ </ul></div>
+
+ <div class="col-xs-3">
+    Размер каталога<br>
+    <select class="form-control">
+        <option value="a6" class="a6">A6, книга (105х148мм)</option>
+        <option value="a5" class="a5">A5, книга (148х210мм)</option>
+        <option value="a4" class="a4">A4, книга (210х297мм)</option>
+        <option value="a3" class="a3" disabled="disabled">A3, книга (297х420мм)</option>
+        <option value="a6a" class="a6a">A6, альбом (148х105мм)</option>
+        <option value="a5a" class="a5a">A5, альбом (210х148мм)</option>
+        <option value="a4a" class="a4a" disabled="disabled">A4, альбом (297х210мм)</option>
+        <option value="a3a" class="a3a" disabled="disabled">A3, альбом (420х297мм)</option>
+    </select><br>
+       
+      Количество страниц<br>
+      <select class="form-control">
+          <option value="8" class="sc8">8 стр (с обложкой)</option>
+          <option value="12" class="sc12">12 стр (с обложкой)</option>
+
+          <option value="16" class="sc16">16 стр (с обложкой)</option>
+          <option value="20" class="sc20">20 стр (с обложкой)</option>
+          <option value="24" class="sc24">24 стр (с обложкой)</option>
+
+          <option value="28" class="sc28">28 стр (с обложкой)</option>
+          <option value="32" class="sc32">32 стр (с обложкой)</option>
+
+          <option value="36" class="sc36">36 стр (с обложкой)</option>
+          <option value="40" class="sc40">40 стр (с обложкой)</option>
+      </select><br>
+    Обложка<br>
+     <select class="form-control">
+       <option value="меловка 250 г/м², 4+0 без ламинации">меловка 250 г/м², 4+0 без ламинации</option>
+       <option value="меловка 130 г/м², 4+4 без отделки">меловка 130 г/м², 4+4 без отделки</option>
+       
+     </select><br>
+    Макет<br>
+    <select class="form-control">
+      <option value="4+4">Создать по шаблону</option>
+      <option value="4+0">Проверить макет автоматически</option>
+      <option value="4+0">Сформировать ТЗ дизайнеру</option>
+    </select><br>
+        
+
+</div>
+
+  
+ <div class="parametersCallingCard">
+
+
+
+        <table>
+          <thead>
+            <tr>
+              <th>Тираж</th>
+              <th class="col">50</th>
+              <th class="col">150</th>
+              <th class="col">200</th>
+              <th class="col">250</th>
+              <th class="col">500</th>
+              <th class="col">1000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row">Мелованная 80г/м2</th>
+              <td>6.18</td>
+              <td>3.52</td>
+              <td>2.17</td>
+              <td>1.77</td>
+              <td>1.45</td>
+              <td>1.14</td>
+            </tr>
+      
+            <tr>
+              <th class="row">Мелованная 130г/м2</th>
+              <td>4.41</td>
+              <td>4.3</td>
+              <td>4.21</td>
+              <td>4.15</td>
+              <td>3.95</td>
+              <td>3.87</td>
+            </tr>
+
+          <tbody>
+        </table>
+      
+
+</div>
+ <style>
+table {
+  overflow: hidden;
+  
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: #ffa;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:after,
+th:after {
+  background-color: #ffa;
+}
+
+td:hover {
+  background-color: rgb(86, 130, 252);
+}
+
+td:focus::after,
+th:focus::after {
+  background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+td:focus::before,
+tbody th:focus::before {
+  background-color: lightblue;
+  content: '';  
+  height: 100%;
+  top: 0;
+  left: -5000px;
+  position: absolute;  
+  width: 10000px;
+  z-index: -1;
+}
+
+
+ </style>
+ <br><br><br><br>
+ <div class="col-xs-3">
+    <input class="form-control" readonly="readonly" name="surname" placeholder="Итого:"><br>
+    
+</div>
+<button class="btn btn-primary" >Продолжить</button>
+</body></html>
